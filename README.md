@@ -12,7 +12,7 @@ The mosh works out of the box but I left extensive notes in the program to help 
 
 How to run the program after it's downloaded:
 
-- Unzip the included files ffmpeg.exe.zip and python-3.6.0.zip
+- Unzip you-can-datamosh-on-windows-master.zip then the files inside: ffmpeg.zip and python-3.6.0.zip
 - make sure the Python folder is named python-3.6.0 and that Python.exe and a bunch of other files are in the main python-3.6.0 folder.
 
 There are two ways to run the datamoshing program:
