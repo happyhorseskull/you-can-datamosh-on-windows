@@ -100,9 +100,9 @@ Note: youtube-dl.exe will be out of date by the time you get this and you'll wan
 We just met. I completely understand if you don't totally trust me and want to go to those sites and download the files yourself.
 Really I just included them for your conveinence. No big deal. My feelings are fine..no just go do it..go..I'll wait here.
 
-Got 'em? Great. Because .bat files are real picky about file names so you'll want to make sure of a few details. The Python folder should be named python-3.6.0 and contain Python.exe with a bunch of other files in the main python-3.6.0 folder. ffmpeg.exe should be in the `you-can-datamosh-on-windows-master` folder. youtube-dl.exe can go in whichever folder you prefer or on your desktop or whatever.
+Got 'em? Great. Bat files are real picky about file names so you'll want to make sure a few details are correct. The Python folder should be named python-3.6.0 and contain Python.exe with a bunch of other files in the main python-3.6.0 folder. ffmpeg.exe should be in the `you-can-datamosh-on-windows-master` folder. youtube-dl.exe can go in whichever folder you prefer or on your desktop or whatever.
 
-I didn't want to zip ffmpeg.exe but the file size is 37 MB and github has a 25 MB file size limit. Embeddable Python was included because the usual route for this sort of thing involves editing the Windows path variable. An activity I've never enjoyed doing or explaining. But if that's something you know how to do or want to learn how to do then you won't have the .bat file holding you back while programming in Python and experiencing the joy of datamoshing.
+I didn't want to zip ffmpeg.exe but the file size is 37 MB and github has a 25 MB file size limit. Embeddable Python was included because the usual route for this sort of thing involves editing the Windows path variable. I've never enjoyed doing or explaining how to edit the path variable so I included Python as a convenint shortcut for both of us.
 
 #
 
