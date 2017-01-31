@@ -40,10 +40,11 @@ The datamoshed video will be in a new folder: `moshed_videos\`
 
 If you get a `system can not find file` error at the command line it usually means you forgot to unzip the files or put them in the right folder which is totally okay and nothing to feel bad about. (I forgot like 3 times while testing the code.)
 
-Editing the Python file is easy with a simple code editor like Notepad++ https://notepad-plus-plus.org/ \n
-(If your code editing session gets wild and you're not sure how to fix it you can always re-download the program from here. So have no fear about poking around in there and changing things)
+Editing the Python file is easy with a simple code editor like Notepad++ https://notepad-plus-plus.org/
 
 Good luck, friends!
+
+(If your code editing session gets wild and you're not sure how to fix it you can always re-download the program from here. So have no fear about poking around in there changing things.)
 
 #
 
