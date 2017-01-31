@@ -50,6 +50,28 @@ Editing the Python file is easy with a simple code editor like Notepad++ https:/
 
 If your code editing session gets wild and you're not sure how to fix `do_the_mosh_win.py` you can always re-download the code from here.
 
+# GIF? GIF!
+
+Okay so mp4 files are fun and good but what about GIFs? That is not a problem with ffmpeg.exe.
+
+`ffmpeg.exe -v error -i moshed_videos\moshed_[moshed video file name].mp4 [file name].gif`
+
+Note: the default settings in `do_the_mosh_win.py` produce 60 second videos which is a bit much for a GIF and you'll want to edit the settings video output settings down to say 10 seconds or less so when you convert the mp4 you aren't getting 84 MB GIF files that cause many GIF players give up and quit.
+
+
+~~ADVANCED GIF LEARNING~~
+
+The results will be okay but if you want to improve the output you'll find ideas here: http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
+
+Unfortunately, that's written for Linux and the commands won't translate over for you as they're written.
+
+command translations:
+`Linux        Windows
+ffmpeg    => ffmpeg.exe
+ls        => dir
+
+./gif.sh` => that's how you run a shell file in the current directory on Linux which is like a batch file on Windows
+
 #
 
 Where did those .exe files come from?? I WILL TELL YOU BECAUSE WE ARE FRIENDS AND I WANT YOU TO FEEL SAFE.
