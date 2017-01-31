@@ -50,7 +50,9 @@ Editing the Python file is easy with a simple code editor like Notepad++ https:/
 
 If your code editing session gets wild and you're not sure how to fix `do_the_mosh_win.py` you can always re-download the code from here.
 
-# GIF? GIF!
+# 
+
+GIF? GIF!
 
 Okay so mp4 files are fun and good but what about GIFs? That is not a problem with ffmpeg.exe.
 
