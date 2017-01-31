@@ -24,7 +24,7 @@ There are two ways to run the datamoshing program:
 (Other versions of Python might work but I've only tested this with Python 3.6)
 
 or else:
-- press the Windows button and type `cmd` to open the command prompt and go to the `you-can-datamosh-on-windows` folder.
+- press the Windows button and type `cmd` to open the command prompt and go to the `you-can-datamosh-on-windows-master` folder.
 - Then run this command:
 
 `datamosh.bat [video file name]`
@@ -32,6 +32,9 @@ or else:
 (If you click on datamosh.bat in the file explorer window no moshing will occur. Instead you'll see a little white screen flash by.)
 
 The datamoshed video will be in a new folder: `moshed_videos\`
+
+If you get a `system can not find file` error at the command line it usually means you forgot to unzip the files or put them in 
+the right folder which is totally okay and nothing to feel bad about. (I forgot like 3 times while testing the code.)
 
 Good luck, friends!
 
@@ -52,22 +55,27 @@ Note: youtube-dl.exe will be out of date by the time you get this and you'll wan
 
 `youtube-dl.exe --update`
 
-We just met. I totally understand if you don't totally trust me and want to go to those sites and download the files yourself.
+We just met. I completely understand if you don't totally trust me and want to go to those sites and download the files yourself.
 Really I just included them for your conveinence. No big deal. My feelings are fine..no just go do it..I'll wait here.
 
 Got 'em? Great. Because .bat folders are real picky about file names you'll want to make sure of a few details.
 The Python folder should be named python-3.6.0 and Python.exe with a bunch of other files should be in the 
-main python-3.6.0 folder. ffmpeg.exe should be in the you-can-datamosh-on-windows folder. youtube-dl.exe can go in whichever
-folder you prefer.
+main python-3.6.0 folder. ffmpeg.exe should be in the `you-can-datamosh-on-windows-master` folder. youtube-dl.exe 
+can go in whichever folder you prefer.
+
+I didn't want to zip ffmpeg.exe but the file size is 37 MB and github has a 25 MB file size limit. Embeddable
+Python was included because the usual route for this sort of thing involves editing the Windows path. An activity
+I've never enjoyed doing or explaining. But if that's something you know how to do or want to learn how to do then
+you won't have the .bat file holding you back while programming in Python and experiencing the joy of datamoshing.
 
 #
 
-Need videos to datamosh? I've included youtube-dl.exe to help you out!
+Need videos to mosh? I've included youtube-dl.exe to help you out!
 Downloading youtube videos is as simple as:
 
 `youtube-dl.exe --format 18 [youtube video url] -o youtube_video.mp4`
 
-But wait, there's more: youtube-dl works with lots of other sites like vimeo and can grab most twitter videos. 
+But wait, there's more: youtube-dl.exe works with lots of other sites like vimeo and can grab most twitter videos. 
 To discover if a site is supported try:
 
 `youtube-dl.exe --list-formats [website url]`
