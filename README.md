@@ -16,7 +16,7 @@ How to run the program after it's downloaded:
 - make sure the Python folder is named python-3.6.0 and that Python.exe and a bunch of other files are in the main python-3.6.0 folder.
 - ffmpeg.exe should be in the `you-can-datamosh-on-windows-master` folder
 
-There are three ways to run the datamoshing program:
+There are two ways to run the datamoshing program:
 
 - If you have Python 3.6 installed and know how to use it run:
 
