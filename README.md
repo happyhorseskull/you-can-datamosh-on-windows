@@ -7,7 +7,7 @@ What's a datamosh? Here's an example made by someone who wasn't me!
 
 https://vimeo.com/87545616
 
-The mosh works out of the box and produces videos ready for social media sites like Twitter but I left extensive notes in the program to help you use it, modify it, and understand what's happening.
+The mosh works out of the box and produces videos ready for social media sites like Twitter but I left extensive notes in the program to help you modify it and understand what's happening.
 
 How to run the program after it's downloaded:
 
