@@ -1,6 +1,8 @@
 
 # -*- coding: utf-8 -*-
 
+# tested with x86 (32-bit) Embedded Python 3.6.0 on Windows 10
+
 import os
 import sys
 import subprocess
