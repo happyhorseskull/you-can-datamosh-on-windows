@@ -14,6 +14,7 @@ How to run the program after it's downloaded:
 
 - Unzip you-can-datamosh-on-windows-master.zip then the files inside: ffmpeg.zip and python-3.6.0.zip
 - make sure the Python folder is named python-3.6.0 and that Python.exe and a bunch of other files are in the main python-3.6.0 folder.
+- ffmpeg.exe should be in the `you-can-datamosh-on-windows-master` folder
 
 There are three ways to run the datamoshing program:
 
@@ -37,8 +38,7 @@ which is a convenient way of running this command:
 
 The datamoshed video will be in a new folder: `moshed_videos\`
 
-If you get a `system can not find file` error at the command line it usually means you forgot to unzip the files or put them in 
-the right folder which is totally okay and nothing to feel bad about. (I forgot like 3 times while testing the code.)
+If you get a `system can not find file` error at the command line it usually means you forgot to unzip the files or put them in the right folder which is totally okay and nothing to feel bad about. (I forgot like 3 times while testing the code.)
 
 Good luck, friends!
 
@@ -59,18 +59,14 @@ Note: youtube-dl.exe will be out of date by the time you get this and you'll wan
 
 `youtube-dl.exe --update`
 
+#
+
 We just met. I completely understand if you don't totally trust me and want to go to those sites and download the files yourself.
-Really I just included them for your conveinence. No big deal. My feelings are fine..no just go do it..I'll wait here.
+Really I just included them for your conveinence. No big deal. My feelings are fine..no just go do it..go..I'll wait here.
 
-Got 'em? Great. Because .bat folders are real picky about file names you'll want to make sure of a few details.
-The Python folder should be named python-3.6.0 and Python.exe with a bunch of other files should be in the 
-main python-3.6.0 folder. ffmpeg.exe should be in the `you-can-datamosh-on-windows-master` folder. youtube-dl.exe 
-can go in whichever folder you prefer.
+Got 'em? Great. Because .bat folders are real picky about file names you'll want to make sure of a few details. The Python folder should be named python-3.6.0 and Python.exe with a bunch of other files should be in the main python-3.6.0 folder. ffmpeg.exe should be in the `you-can-datamosh-on-windows-master` folder. youtube-dl.exe can go in whichever folder you prefer.
 
-I didn't want to zip ffmpeg.exe but the file size is 37 MB and github has a 25 MB file size limit. Embeddable
-Python was included because the usual route for this sort of thing involves editing the Windows path. An activity
-I've never enjoyed doing or explaining. But if that's something you know how to do or want to learn how to do then
-you won't have the .bat file holding you back while programming in Python and experiencing the joy of datamoshing.
+I didn't want to zip ffmpeg.exe but the file size is 37 MB and github has a 25 MB file size limit. Embeddable Python was included because the usual route for this sort of thing involves editing the Windows path. An activity I've never enjoyed doing or explaining. But if that's something you know how to do or want to learn how to do then you won't have the .bat file holding you back while programming in Python and experiencing the joy of datamoshing.
 
 #
 
