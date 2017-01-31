@@ -143,7 +143,7 @@ if not os.path.exists(output_dir):
 # The -t option specifies the duration of the final video and usually helps avoid the malformed headers at the end.
 subprocess.run('ffmpeg.exe -loglevel error -y -i ' + output_avi + ' ' +
 				' -crf 18 -pix_fmt yuv420p -vcodec libx264 -acodec aac -r ' + str(fps) + ' ' +
-				' -vf scale=' + str(output_video_width_in_pixels) + ':-2 ' + ' ' +
+				' -vf "scale=' + str(output_video_width_in_pixels) + ':-2:flags=lanczos" ' + ' ' +
 				' -t ' + str(output_length) + ' ' +	output_video)
 
 
