@@ -5,6 +5,7 @@ Hello, friends. Now you can datamosh from the command line on Windows!
 What's a datamosh?
 
 Here's an example made by someone who wasn't me!
+
 https://vimeo.com/87545616
 
 The mosh works out of the box but I left extensive notes in the program to help you use it and understand what's happening.
@@ -17,13 +18,17 @@ How to run the program after it's downloaded:
 There are two ways to run the datamoshing program:
 
 - If you have Python 3.6 installed and know how to use it run:
+
 `do_the_mosh_win.py [video file name]`
+
 (Other versions of Python might work but I've only tested this with Python 3.6)
 
 or else:
 - press the Windows button and type `cmd` to open the command prompt and go to the you-can-datamosh-on-windows folder.
 - Then run this command:
+
 `datamosh.bat [video file name]`
+
 (If you click on datamosh.bat in the file explorer window no moshing will occur. Instead you'll see a little white screen flash by.)
 
 The datamoshed video will be in a new folder: moshed_videos\
@@ -44,6 +49,7 @@ https://www.python.org/downloads/release/python-360/
 https://rg3.github.io/youtube-dl/
 
 Note: youtube-dl.exe will be out of date by the time you get this and you'll want to update it with the command:
+
 `youtube-dl.exe --update`
 
 We just met. I totally understand if you don't totally trust me and want to go to those sites and download the files yourself.
