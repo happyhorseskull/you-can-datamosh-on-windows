@@ -24,14 +24,14 @@ There are two ways to run the datamoshing program:
 (Other versions of Python might work but I've only tested this with Python 3.6)
 
 or else:
-- press the Windows button and type `cmd` to open the command prompt and go to the you-can-datamosh-on-windows folder.
+- press the Windows button and type `cmd` to open the command prompt and go to the `you-can-datamosh-on-windows` folder.
 - Then run this command:
 
 `datamosh.bat [video file name]`
 
 (If you click on datamosh.bat in the file explorer window no moshing will occur. Instead you'll see a little white screen flash by.)
 
-The datamoshed video will be in a new folder: moshed_videos\
+The datamoshed video will be in a new folder: `moshed_videos\`
 
 Good luck, friends!
 
