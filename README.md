@@ -1,6 +1,6 @@
 # you-can-datamosh-on-windows
 
-Hello, friends. Now you can datamosh from the command line on Windows!
+Hello, friends! Now you can datamosh from the command line on Windows!
 
 What's a datamosh?
 
