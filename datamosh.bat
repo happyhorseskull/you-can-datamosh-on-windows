@@ -4,5 +4,5 @@ if "%1"=="" (
     goto:eof
   ) else (
     echo Processing, please wait.
-    start /b /wait python-3.6.0\python.exe do_the_mosh.py %1
+    start /b /wait python-3.6.0\python.exe do_the_mosh_win.py %1
 )
