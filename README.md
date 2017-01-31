@@ -59,7 +59,7 @@ Okay so mp4 files are fun and good but what about GIFs? That is not a problem wi
 Note: the default settings in `do_the_mosh_win.py` produce 60 second videos which is a bit much for a GIF and you'll want to edit the settings video output settings down to say 10 seconds or less so when you convert the mp4 you aren't getting 84 MB GIF files that cause many GIF players give up and quit.
 
 
-~~ADVANCED GIF LEARNING~~
+--ADVANCED GIF LEARNING--
 
 The results will be okay but if you want to improve the output you'll find ideas here: http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
 
