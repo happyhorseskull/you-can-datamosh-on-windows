@@ -35,7 +35,7 @@ which is a convenient way of running this command:
 `python-3.6.0\Python.exe do_the_mosh_win.py [video file name]`
 
 You can also drag and drop the video on top of datamosh.bat in the file explorer window and it will run the file.
-(However if you just click on datamosh.bat in the file explorer window no moshing will occur. Instead you'll see a little white screen flash by.)
+(However, if you just click on datamosh.bat in the file explorer window no moshing will occur. Instead you'll see a little white screen flash by.)
 
 The datamoshed video will be in a new folder: `moshed_videos\`
 
