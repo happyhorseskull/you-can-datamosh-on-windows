@@ -1,13 +1,9 @@
 # you-can-datamosh-on-windows
 
 Hello, friends! Now you can datamosh from the command line on Windows!
+(or if you have the video already you can drag and drop it on top of datamosh.bat in the file explorer window)
 
-(or if you have the video already you can drag and drop it on datamosh.bat)
-
-
-What's a datamosh?
-
-Here's an example made by someone who wasn't me!
+What's a datamosh? Here's an example made by someone who wasn't me!
 
 https://vimeo.com/87545616
 
