@@ -7,7 +7,7 @@ What's a datamosh? Here's an example made by someone who wasn't me!
 
 https://vimeo.com/87545616
 
-The mosh works out of the box but I left extensive notes in the program to help you use it and understand what's happening.
+The mosh works out of the box and produces videos ready for social media sites like Twitter but I left extensive notes in the program to help you use it, modify it, and understand what's happening.
 
 How to run the program after it's downloaded:
 
@@ -39,6 +39,8 @@ You can also drag and drop the video on top of datamosh.bat in the file explorer
 The datamoshed video will be in a new folder: `moshed_videos\`
 
 If you get a `system can not find file` error at the command line it usually means you forgot to unzip the files or put them in the right folder which is totally okay and nothing to feel bad about. (I forgot like 3 times while testing the code.)
+
+You can most easily reach me on twitter. I am @happyhorseskull there as well.
 
 Good luck, friends!
 
