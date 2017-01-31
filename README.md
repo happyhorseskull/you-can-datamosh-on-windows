@@ -72,13 +72,13 @@ command translations:
 
 Linux        Windows
 
-`ffmpeg    => ffmpeg.exe
+`ffmpeg    => ffmpeg.exe`
 
-ls        => dir
+`ls        => dir`
 
-./gif.sh  =>` that runs a shell file on Linux which is like a batch file on Windows
+`./gif.sh  =>` that runs a shell file on Linux which is like a batch file on Windows
 
-Gonna have a TBH moment here with you. I've only run the high-quality-gif commands from that blog post on Linux and never Windows so I don't have a lot of guidance to offer you on this path.
+Gonna have a TBH moment with you. I've only run the high-quality-gif commands from that blog post on Linux and never Windows so I don't have a lot of guidance to offer you on this path.
 
 #
 
