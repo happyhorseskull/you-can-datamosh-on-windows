@@ -15,7 +15,7 @@ How to run the program after it's downloaded:
 - Unzip you-can-datamosh-on-windows-master.zip then the files inside: ffmpeg.zip and python-3.6.0.zip
 - make sure the Python folder is named python-3.6.0 and that Python.exe and a bunch of other files are in the main python-3.6.0 folder.
 
-There are two ways to run the datamoshing program:
+There are three ways to run the datamoshing program:
 
 - If you have Python 3.6 installed and know how to use it run:
 
@@ -23,11 +23,15 @@ There are two ways to run the datamoshing program:
 
 (Other versions of Python might work but I've only tested this with Python 3.6)
 
-or else:
+or:
 - press the Windows button and type `cmd` to open the command prompt and go to the `you-can-datamosh-on-windows-master` folder.
 - Then run this command:
 
 `datamosh.bat [video file name]`
+
+which is a convenient way of running this command:
+
+`python-3.6.0\Python.exe do_the_mosh_win.py [video file name]`
 
 (If you click on datamosh.bat in the file explorer window no moshing will occur. Instead you'll see a little white screen flash by.)
 
