@@ -3,7 +3,7 @@
                         rem    This assumes you want a GIF that's shorter than the entire video.  
                         rem    Start time is how many seconds into the video to wait before starting to record the GIF
                         rem    Set it to zero if you want to start at the beginning of the video
-                        
+
                         rem    length sets how long the GIF will record. 
                         rem    If start is set to 4 and length set to 5 the GIF will record seconds 4 through 9 of the video
 set start=0
@@ -21,11 +21,11 @@ goto:eof
 
   set "gif_folder=GIFs"
   if not exist %gif_folder% mkdir %gif_folder%
+  
                         rem    this splits the file name from the file extension and then uses the name for the GIF
   for %%f in (%1) do ( set "gif_name=%%~nf" )
   set gif_file="%gif_folder%\%gif_name%.gif"
   
-                        rem    GIF making information adapted from http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
   if [%2] == [] ( 
     set start_time=%start%
   ) else (
@@ -39,6 +39,8 @@ goto:eof
   )
 
   echo Creating GIF, please wait.
+  
+                        rem    GIF making information adapted from http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
   
   set palette="%gif_folder%\palette.png"
   set filters="fps=15,scale=480:-2:flags=lanczos"
