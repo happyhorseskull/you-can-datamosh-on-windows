@@ -39,13 +39,17 @@ goto:eof
   set gif_file="%gif_folder%\%gif_name%.gif"
 	
   set palette="gifs\palette.png"
+
   set filters="fps=15,scale=480:-2:flags=lanczos"
 
-  echo Creating GIF, please wait.	
-                        rem    the stats_mode option can be either stats_mode=diff or stats_mode=full
+  echo Creating GIF, please wait.
+  
+                        rem    the first run generates a global palette of 256 colors that will be used for every frame
+			rem    the stats_mode option can be either stats_mode=diff or stats_mode=full
                         rem    stats_mode=full chooses colors that will optimize colors for the entire frame 
                         rem    while stats_mode=diff optimizes colors to make the changes look good 
   start /b /wait ffmpeg.exe -v warning -ss %start_time% -t %duration% -i %1 -vf "%filters%,palettegen=stats_mode=diff" -y %palette%
+                        rem    the second run uses the color palette while making the GIF
   start /b /wait ffmpeg.exe -v warning -ss %start_time% -t %duration% -i %1 -i %palette% -lavfi "%filters% [x]; [x][1:v] paletteuse" -y %gif_file%
 
   rm %palette%
