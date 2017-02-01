@@ -53,6 +53,7 @@ If your code editing session gets wild and you're not sure how to fix `do_the_mo
 # 
 
 ffmpeg makes it super easy to trim a video:
+
 `ffmpeg.exe -i [original video file name].mp4 -ss 30 -t 10 [new video file name].mp4`
 
 `-ss` says to start copying the original video at 0:30 seconds and `-t` is how many seconds long the video will be which means the new shorter video is a copy of 0:30..0:40 of the original video.
