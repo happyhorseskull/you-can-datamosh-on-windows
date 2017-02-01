@@ -8,7 +8,7 @@ cd /d "%~dp0"
 
 if not [%1] == [] goto make_gif
 
-echo Please provide a video file name. Additionally you can include the second from the video that the GIF starts on and the GIF's lenth in seconds.
+echo Please provide a video file name. Additionally you can include the second from the video that the GIF starts on and the GIF's length in seconds.
 goto:eof
 
 :make_gif
