@@ -38,7 +38,7 @@ goto:eof
   )
                        
   if [%3]==[] (
-    set /a duration = %start_time% + %end_gif%
+    set /a duration=%start_time% + %end_gif%
   ) else (
     set /a duration=%3 - %start_time%
   )
