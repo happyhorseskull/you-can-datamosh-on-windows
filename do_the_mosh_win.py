@@ -20,21 +20,18 @@ if len(sys.argv) < 2:
 if not os.path.isfile(sys.argv[1]):
 	print("Couldn't find that video file. You might want to check the file name??")
 	sys.exit()
-
 else:
 	input_video = sys.argv[1]		# We're assuming you gave it a valid video file and not a .txt or whatever.
-									# If you want file validation you'll have to write it yourself.
+						# If you want file validation you'll have to write it yourself.
 # variables
-
 fn = os.path.splitext(os.path.basename(input_video))[0]
 
 output_dir   = 'moshed_videos/'
-
 # make sure the output directory exists
 if not os.path.exists(output_dir):
 	os.mkdir(output_dir)
 
-input_avi    = output_dir + 'datamoshing_input.avi'		# must be an AVI so i-frames can be located in binary file
+input_avi    = output_dir + 'datamoshing_input.avi'	# must be an AVI so i-frames can be located in binary file
 output_avi   = output_dir + 'datamoshing_output.avi'
 output_video = output_dir + 'moshed_' + fn + '.mp4'	# this ensures we won't over-write your original video
 
@@ -116,7 +113,6 @@ iframe = bytes.fromhex('0001B0')
 i_frame_yet = False
 
 for index, frame in enumerate(frames):
-
 	if  i_frame_yet == False or index < int(start_sec * fps) or index > int(end_sec * fps):
 
 		# the split() above removed the end of frame signal so we put it back in
@@ -125,7 +121,6 @@ for index, frame in enumerate(frames):
 		# found an i-frame, let the glitching begin
 		if frame[5:8] == iframe:
 			i_frame_yet = True
-
 	else:
 		# if it's not an i-frame it's a p-frame. All i-frames are being dropped.
 		if frame[5:8] != iframe:
@@ -133,7 +128,6 @@ for index, frame in enumerate(frames):
 			# this repeats the p-frame x times
 			for i in range(repeat_p_frames):
 				out_file.write(frame + bytes.fromhex('30306463'))
-
 
 in_file.close()
 out_file.close()
