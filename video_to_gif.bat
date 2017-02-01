@@ -34,13 +34,19 @@ goto:eof
   if [%2]==[] ( 
     set start_time=%start_second%
   ) else (
-    set start_time=%2
+    set start_time=[%2]
   )
                        
   if [%3]==[] (
     set /a duration=%start_time% + %end_gif%
   ) else (
     set /a duration=%3 - %start_time%
+	if [%2] GEQ [%3] (
+	  echo.
+	  echo Error: Something has gone wrong with the numbers that were entered. 
+	  echo Please make sure that the first one is smaller than the second one.
+	  goto:eof
+	)
   )
 
   echo Creating GIF, please wait.
