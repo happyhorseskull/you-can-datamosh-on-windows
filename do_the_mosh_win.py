@@ -1,6 +1,6 @@
 
-start_sec = 3.1				# Time the effect starts on the original footage's timeline. The output video can be much longer.
-end_sec   = 6.8				# Time the effect ends on the original footage's timeline.
+start_sec = 3				# Time the effect starts on the original footage's timeline. The output video can be much longer.
+end_sec   = 6				# Time the effect ends on the original footage's timeline.
 output_length = 60			# In seconds. ffmpeg also accepts 00:01:00.000 format.
 repeat_p_frames = 15			# If this is set to 0 the result will only contain i-frames. Possibly only a single i-frame.
 output_video_width_in_pixels = 480	# 480 is Twitter-friendly.
