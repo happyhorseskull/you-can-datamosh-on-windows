@@ -1,11 +1,11 @@
 @echo off
 
-                        rem    'start' is how many seconds into the video to wait before starting to record the GIF
+                        rem    'start_second' is how many seconds into the video to wait before starting to record the GIF
                         rem    Set it to zero if you want to start at the beginning of the video
 
                         rem    'length' sets how long the GIF will record. 
                         rem    If start is set to 4 and length set to 5 the GIF will record seconds 4 through 9 of the video
-set start=0
+set start_second=0
 set length=10
 
                         rem    keeps the current directory from changing if a file is dropped in the file explorer from a different folder
@@ -30,7 +30,7 @@ goto:eof
   
                         rem    Assigns default values at the start of the file if none given at command line
   if [%2] == [] ( 
-    set start_time=%start%
+    set start_time=%start_second%
   ) else (
     set start_time=%2
   )
