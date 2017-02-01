@@ -50,7 +50,7 @@ Editing the Python file is easy with a simple code editor like Notepad++ https:/
 
 If your code editing session gets wild and you're not sure how to fix `do_the_mosh_win.py` you can always re-download the code from here.
 
-Here are the really important variables in `do_the_mosh_win.py` for changing the output:
+Here are the really important variables in `do_the_mosh_win.py` for changing the video it creates:
 
 `start_sec = 3` Time the effect starts on the original video's timeline. The final video can be much longer.
 
