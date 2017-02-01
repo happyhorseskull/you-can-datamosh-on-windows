@@ -1,16 +1,22 @@
 
-# -*- coding: utf-8 -*-
-
-# tested with x86 (32-bit) Embedded Python 3.6.0 on Windows 10
-
-import os
-import sys
-import subprocess
+start_sec = 3.1				# Time the effect starts on the original footage's timeline. The output video can be much longer.
+end_sec   = 6.8				# Time the effect ends on the original footage's timeline.
+output_length = 60			# In seconds. ffmpeg also accepts 00:01:00.000 format.
+repeat_p_frames = 15			# If this is set to 0 the result will only contain i-frames. Possibly only a single i-frame.
+output_video_width_in_pixels = 480	# 480 is Twitter-friendly. Programs get real mad if a video is an odd number of pixels wide (or in height).
+fps = 25				# The number of frames per second the initial video is converted to before moshing.
 
 # here's the relevant information if you're trying to adapt this into another programming language
 # - convert the video to AVI format
 # - designator for beginning of i-frame:	0x0001B0
 # - designator for the end of every frame type:		0x30306463 (usually referenced as ASCII 00dc)
+
+# -*- coding: utf-8 -*-
+# tested with x86 (32-bit) Embedded Python 3.6.0 on Windows 10
+
+import os
+import sys
+import subprocess
 
 # make sure a video was included at command line
 if len(sys.argv) < 2:
@@ -23,7 +29,7 @@ if not os.path.isfile(sys.argv[1]):
 else:
 	input_video = sys.argv[1]		# We're assuming you gave it a valid video file and not a .txt or whatever.
 						# If you want file validation you'll have to write it yourself.
-# variables
+# file variables
 fn = os.path.splitext(os.path.basename(input_video))[0]
 
 output_dir   = 'moshed_videos/'
@@ -34,13 +40,6 @@ if not os.path.exists(output_dir):
 input_avi    = output_dir + 'datamoshing_input.avi'	# must be an AVI so i-frames can be located in binary file
 output_avi   = output_dir + 'datamoshing_output.avi'
 output_video = output_dir + 'moshed_' + fn + '.mp4'	# this ensures we won't over-write your original video
-
-fps = 25				# The number of frames per second the initial video is converted to before moshing.
-start_sec = 3.1				# Time the effect starts on the original footage's timeline. The output video can be much longer.
-end_sec   = 6.8				# Time the effect ends on the original footage's timeline.
-repeat_p_frames = 15			# If this is set to 0 the result will only contain i-frames. Possibly only a single i-frame.
-output_length = 60			# In seconds. ffmpeg also accepts 00:01:00.000 format.
-output_video_width_in_pixels = 480	# 480 is Twitter-friendly. Programs get real mad if a video is an odd number of pixels wide (or in height).
 
 
 	##############################################################################################################
