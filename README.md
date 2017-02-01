@@ -52,17 +52,24 @@ If your code editing session gets wild and you're not sure how to fix `do_the_mo
 
 # 
 
+ffmpeg makes it super easy to trim a video:
+`ffmpeg.exe -i [original video file name].mp4 -ss 30 -t 10 [new video file name].mp4`
+
+`-ss` says to start copying the original video at 0:30 seconds and `-t` is how many seconds long the video will be which means the new shorter video is a copy of 0:30..0:40 of the original video.
+
+#
+
 GIF? GIF!
 
-Okay so mp4 files are fun and good but what about GIFs? That is not a problem with ffmpeg.exe.
+Okay so MP4 files are fun and good but what about GIFs? That is not a problem with ffmpeg.exe.
 
-`ffmpeg.exe -v error -i [video file name].mp4 [file name].gif`
+`ffmpeg.exe -v error -i [video file name].mp4 [gif file name].gif`
 
 However the GIFs from that are kinda not that great so I adapted the information from http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html and made `video_to_gif.bat` for your high-quality GIF convenience! The command to use it is:
 
 `video_to_gif.bat [video file name]`
 
-or you can drop the video on the `video_to_gif.bat` in the file explorer window. Your new GIF will be in the `GIFs` folder 
+or you can drop the video on the `video_to_gif.bat` in the file explorer window. Your new GIF will be in the `GIFs` folder as `[original video file name].gif`
 
 The current settings in `video_to_gif.bat` will copy the first 10 seconds of the video to the GIF. But it it easy to change that. You can either:
 
@@ -72,6 +79,8 @@ which will start at the 10th second and be 5 seconds long
 
 or:
 - you can edit `video_to_gif.bat` and change the `start` and `length` variables to be whichever default values you prefer.
+
+Warning: `video_to_gif.bat` will overwrite previous GIFs made from the same video file if you leave them in the GIFs directory.
 
 #
 
