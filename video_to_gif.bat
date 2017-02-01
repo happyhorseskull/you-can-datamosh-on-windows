@@ -53,9 +53,9 @@ goto:eof
 			                  rem    the stats_mode option can be either stats_mode=diff or stats_mode=full
                         rem    stats_mode=full chooses colors that will optimize colors for the entire frame 
                         rem    while stats_mode=diff optimizes colors to make the changes look good 
-  start /b /wait ffmpeg.exe -v error -i %1 -ss %start_time% -t %duration% -vf "%filters%,palettegen=stats_mode=diff" -y %palette%
+  start /b /wait ffmpeg.exe -v error -ss %start_time% -t %duration% -i %1 -vf "%filters%,palettegen=stats_mode=diff" -y %palette%
   
                         rem    the second run uses the color palette while making the GIF
-  start /b /wait ffmpeg.exe -v error -i %1 -ss %start_time% -t %duration% -i %palette% -lavfi "%filters% [x]; [x][1:v] paletteuse" -y %gif_file%
+  start /b /wait ffmpeg.exe -v error -ss %start_time% -t %duration% -i %1 -i %palette% -lavfi "%filters% [x]; [x][1:v] paletteuse" -y %gif_file%
 
   rm %palette%
