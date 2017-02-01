@@ -24,7 +24,7 @@ There are two ways to run the datamoshing program:
 (Other versions of Python might work but I've only tested this with Python 3.6)
 
 or:
-- press the Windows button and type `cmd` to open the command prompt and go to the `you-can-datamosh-on-windows-master` folder.
+- press the Windows button and type `cmd` to open the command prompt and go to the `you-can-datamosh-on-windows-master` folder. This page has information on how to find files from `cmd` http://www.dummies.com/computers/operating-systems/windows-xp-vista/how-to-search-for-files-from-the-dos-command-prompt/
 - Then run this command:
 
 `datamosh.bat [video file name]`
