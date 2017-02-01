@@ -1,4 +1,4 @@
-# you-can-datamosh-on-windows
+#### you-can-datamosh-on-windows
 
 Hello, friends! Now you can datamosh from the command line on Windows!
 (or you can drag and drop a video file on top of datamosh.bat in the file explorer window)
@@ -25,6 +25,7 @@ There are two ways to run the datamoshing program:
 
 or:
 - press the Windows button and type `cmd` to open the command prompt and go to the `you-can-datamosh-on-windows-master` folder. This page has information on how to find files from `cmd` http://www.dummies.com/computers/operating-systems/windows-xp-vista/how-to-search-for-files-from-the-dos-command-prompt/
+
 - Then run this command:
 
 `datamosh.bat [video file name]`
@@ -46,7 +47,7 @@ Good luck, friends!
 
 #
 
-Editing the Python file is easy with a simple code editor like Notepad++ https://notepad-plus-plus.org/
+Editing Python files is easy with a simple code editor like Notepad++ https://notepad-plus-plus.org/
 
 If your code editing session gets wild and you're not sure how to fix `do_the_mosh_win.py` you can always re-download the code from here.
 
@@ -60,7 +61,8 @@ Here are the really important variables in `do_the_mosh_win.py` for changing the
 
 `repeat_p_frames = 15` Changes how many frames are added during the datamosh
 
-# 
+
+##### trim videos with ffmpeg
 
 ffmpeg makes it super easy to trim a video:
 
@@ -68,9 +70,8 @@ ffmpeg makes it super easy to trim a video:
 
 `-ss` says to start copying the original video at 0:30 seconds and `-t` is how many seconds long the video will be which means the new shorter video is a copy of 0:30..0:40 of the original video.
 
-#
 
-GIF? GIF!
+##### GIF? GIF! with video_to_gif.bat
 
 Okay so MP4 files are fun and good but what about GIFs? That is not a problem with ffmpeg.exe.
 
@@ -84,12 +85,18 @@ or you can drop the video on the `video_to_gif.bat` in the file explorer window.
 
 The current settings in `video_to_gif.bat` will copy the first 10 seconds of the video to the GIF. But it it easy to change that. You can either:
 
-- run the file from the command line and specify the start time and length:
-`video_to_gif.bat [video file name] 10 5`
-which will start at the 10th second and be 5 seconds long
+- run the file from the command line and specify the start time and end time:
+`video_to_gif.bat [video file name] 10 20`
+which will start at the 10th second and end on the 20th second.
 
 or:
-- you can edit `video_to_gif.bat` and change the `start` and `length` variables to be whichever default values you prefer.
+- you can edit `video_to_gif.bat` and change the `start_gif` and `end_gif` variables to be whichever default values you prefer.
+
+GIFs can become suprisingly large files. If you need to make a GIF file size smaller you can make the GIF length shorter or you can edit some variables in `video_to_gif.py`
+
+`fps` is frames per second. A lower `fps` will create smaller files.
+
+`gif_width` sets how wide the GIF is. The height will scale to match. A narrower width GIF will have a smaller file size.
 
 Warning: `video_to_gif.bat` will overwrite previous GIFs made from the same video file if you leave them in the GIFs directory.
 
@@ -119,7 +126,8 @@ Got 'em? Great. Bat files are real picky about file names so you'll want to make
 
 I didn't want to zip ffmpeg.exe but the file size is 37 MB and github has a 25 MB file size limit. Embeddable Python was included because the usual route for this sort of thing involves editing the Windows path variable. I've never enjoyed doing or explaining how to edit the path variable so I included Python as a convenint shortcut for both of us.
 
-#
+
+##### youtube-dl
 
 Need videos to mosh? I've included youtube-dl.exe to help you out!
 Downloading youtube videos is as simple as:
