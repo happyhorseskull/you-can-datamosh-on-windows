@@ -4,8 +4,8 @@
                         rem    Set it to zero if you want to start at the beginning of the video
                         rem    'end_gif' is the second when the copying stops
 
-set start_gif=0
-set end_gif=10
+set start_gif = 0
+set end_gif = 10
                         rem    'fps' is frames per second and 'gif_width' is how many pixels wide the final GIF will be
 set fps = 15
 set gif_width = 480
@@ -52,7 +52,7 @@ goto:eof
   
                         rem    the first run generates a global palette of 256 colors that will be used for every frame
                         
-			                  rem    the stats_mode option can be either stats_mode=diff or stats_mode=full
+			rem    the stats_mode option can be either stats_mode=diff or stats_mode=full
                         rem    stats_mode=full chooses colors that will optimize colors for the entire frame 
                         rem    while stats_mode=diff optimizes colors to make the changes look good 
   start /b /wait ffmpeg.exe -v error -ss %start_time% -t %duration% -i %1 -vf "%filters%,palettegen=stats_mode=diff" -y %palette%
