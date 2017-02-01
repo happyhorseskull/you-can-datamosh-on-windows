@@ -3,6 +3,7 @@
 set start=0
 set length=10
 
+                        rem keeps the current directory from changing if a file is dropped in the file explorer from a different folder
 cd /d "%~dp0" 
 
 if not [%1] == [] goto make_gif
