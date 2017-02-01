@@ -52,19 +52,19 @@ If your code editing session gets wild and you're not sure how to fix `do_the_mo
 
 Here are the really important variables in `do_the_mosh_win.py` for changing the output:
 
-Time the effect starts on the original footage's timeline. The output video can be much longer.
 
-`start_sec = 3`
+Time the effect starts on the original footage's timeline. The output video can be much longer.
+```start_sec = 3```
 
 Time the effect ends on the original footage's timeline.
-
-`end_sec   = 6`
+```end_sec = 6```
 
 How long the final video will be in seconds
+```output_length   = 60```
 
-`output_length   = 60`
 
 If this is set to 0 the result will only contain i-frames. Possibly only a single i-frame.
+
 `repeat_p_frames = 15`
 
 # 
