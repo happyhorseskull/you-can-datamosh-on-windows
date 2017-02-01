@@ -28,7 +28,7 @@ goto:eof
   
                         rem    this splits the file name from the file extension and then uses the name for the GIF
   for %%f in (%1) do ( set "gif_name=%%~nf" )
-  set gif_file="%gif_folder%\%gif_name%.gif"
+  set gif_file = "%gif_folder%\%gif_name%.gif"
   
                         rem    Assigns default values at the start of the file if none given at command line
   if [%2] == [] ( 
@@ -48,7 +48,7 @@ goto:eof
                         rem    GIF making information adapted from http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
   
   set palette = "%gif_folder%\palette.png"
-  set filters = "fps=%fps,scale=%gif_width%:-2:flags=lanczos"
+  set filters = "fps=%fps%,scale=%gif_width%:-2:flags=lanczos"
   
                         rem    the first run generates a global palette of 256 colors that will be used for every frame
                         
