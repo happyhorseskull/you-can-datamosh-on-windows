@@ -23,7 +23,7 @@ goto:eof
 
 :make_gif
 
-  set "gif_folder=GIFs"
+  set gif_folder=GIFs
   if not exist %gif_folder% mkdir %gif_folder%
   
                         rem    this splits the file name from the file extension and then uses the name for the GIF
