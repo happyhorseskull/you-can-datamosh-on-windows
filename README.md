@@ -56,29 +56,22 @@ GIF? GIF!
 
 Okay so mp4 files are fun and good but what about GIFs? That is not a problem with ffmpeg.exe.
 
-`ffmpeg.exe -v error -i moshed_videos\moshed_[moshed video file name].mp4 [file name].gif`
+`ffmpeg.exe -v error -i [video file name].mp4 [file name].gif`
 
-Note: the default settings in `do_the_mosh_win.py` produce 60 second videos which is a bit much for a GIF and you'll want to edit the video output settings down to maybe around 10 seconds or less so when you convert the mp4 you aren't getting 84 MB GIF files that cause a lot of GIF players to give up and crash. ffmpeg offers a trim command which might be real handy https://ffmpeg.org/ffmpeg-filters.html#trim
- 
+However the GIFs from that are kinda not that great so I adapted the information from http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html and made `video_to_gif.bat` for your high-quality GIF convenience! The command to use it is:
 
---ADVANCED GIF LEARNING--
+`video_to_gif.bat [video file name]`
 
-The results from the above command will be okay but if you want to improve the output you'll find ideas here: http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
+or you can drop the video on the `video_to_gif.bat` in the file explorer window. Your new GIF will be in the `GIFs` folder 
 
-Unfortunately, that's written for Linux and the commands won't translate over to Windows as they're written.
+The current settings in `video_to_gif.bat` will copy the first 10 seconds of the video to the GIF. But it it easy to change that. You can either:
 
+- run the file from the command line and specify the start time and length:
+`video_to_gif.bat [video file name] 10 5`
+which will start at the 10th second and be 5 seconds long
 
-command translations:
-
-Linux        Windows
-
-`ffmpeg    => ffmpeg.exe`
-
-`ls        => dir`
-
-`./gif.sh  =>` that runs a shell file on Linux which is like a batch file on Windows
-
-Gonna have a TBH moment with you. I've only run the high-quality-gif commands from that blog post on Linux and never Windows so I don't have a lot of guidance to offer you on this path.
+or:
+- you can edit `video_to_gif.bat` and change the `start` and `length` variables to be whichever default values you prefer.
 
 #
 
