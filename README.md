@@ -1,6 +1,5 @@
 #
 ## you-can-datamosh-on-windows
-#
 
 Hello, friends! Now you can datamosh from the command line on Windows!
 (or you can drag and drop a video file on top of datamosh.bat in the file explorer window)
@@ -64,8 +63,9 @@ Here are the really important variables in `do_the_mosh_win.py` for changing the
 `repeat_p_frames = 15` How many times a p-frame is repeated during the datamosh
 
 
-##### trim videos with ffmpeg
 #
+##### trim videos with ffmpeg
+
 
 ffmpeg makes it super easy to trim a video:
 
@@ -74,8 +74,9 @@ ffmpeg makes it super easy to trim a video:
 `-ss` says to start copying the original video at 0:30 seconds and `-t` is how many seconds long the video will be which means the new shorter video is a copy of 0:30..0:40 of the original video.
 
 
-##### GIF? GIF! with video_to_gif.bat
 #
+##### GIF? GIF! with video_to_gif.bat
+
 
 Okay so MP4 files are fun and good but what about GIFs? That is not a problem with ffmpeg.exe.
 
@@ -85,7 +86,7 @@ However the GIFs from that are kinda not that great so I adapted the information
 
 `video_to_gif.bat [video file name]`
 
-or you can drop the video on the `video_to_gif.bat` in the file explorer window. Your new GIF will be in the `GIFs` folder as `[original video file name].gif`
+or you can drop the video on the `video_to_gif.bat` in the file explorer window. Your new GIF will be in the `GIFs` folder as `[original video file name].gif` The GIF will only be datamoshed if you convert a datamoshed video. `video_to_gif.bat` will work with all sorts of regular, boring videos.
 
 The current settings in `video_to_gif.bat` will copy the first 10 seconds of the video to the GIF. But it it easy to change that. You can either:
 
@@ -123,16 +124,16 @@ Note: youtube-dl.exe will be out of date by the time you get this and you'll wan
 
 #
 
-We just met. I completely understand if you don't totally trust me and want to go to those sites and download the files yourself.
-Really I just included them for your conveinence. No big deal. My feelings are fine..no just go do it..go..I'll wait here.
+We just met so I completely understand if you don't totally trust me and want to go to those sites and download the files yourself. Really I just included them for your conveinence. No big deal. My feelings are fine..no just go do it..go..I'll wait here.
 
 Got 'em? Great. Bat files are real picky about file names so you'll want to make sure a few details are correct. The Python folder should be named python-3.6.0 and contain python.exe with a bunch of other files in the main python-3.6.0 folder. ffmpeg.exe should be in the `you-can-datamosh-on-windows-master` folder. youtube-dl.exe can go in whichever folder you prefer or on your desktop or whatever.
 
 I didn't want to zip ffmpeg.exe but the file size is 37 MB and github has a 25 MB file size limit. Embeddable Python was included because the usual route for this sort of thing involves editing the Windows path variable. I've never enjoyed doing or explaining how to edit the path variable so I included Python as a convenint shortcut for both of us.
 
 
-##### youtube-dl
 #
+##### youtube-dl
+
 
 Need videos to mosh? I've included youtube-dl.exe to help you out!
 Downloading youtube videos is as simple as:
