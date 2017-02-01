@@ -1,5 +1,5 @@
 #
-#### you-can-datamosh-on-windows
+### you-can-datamosh-on-windows
 #
 
 Hello, friends! Now you can datamosh from the command line on Windows!
