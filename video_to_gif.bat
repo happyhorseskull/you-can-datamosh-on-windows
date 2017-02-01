@@ -34,7 +34,7 @@ goto:eof
   if [%2]==[] ( 
     set start_time=%start_gif%
   ) else (
-    set start_time=[%2]
+    set start_time=%2
   )
                        
   if [%3]==[] (
