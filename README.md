@@ -1,4 +1,6 @@
+#
 #### you-can-datamosh-on-windows
+#
 
 Hello, friends! Now you can datamosh from the command line on Windows!
 (or you can drag and drop a video file on top of datamosh.bat in the file explorer window)
@@ -59,10 +61,11 @@ Here are the really important variables in `do_the_mosh_win.py` for changing the
 
 `output_length = 60` How long the final video will be in seconds
 
-`repeat_p_frames = 15` Changes how many frames are added during the datamosh
+`repeat_p_frames = 15` How many times a p-frame is repeated during the datamosh
 
 
 ##### trim videos with ffmpeg
+#
 
 ffmpeg makes it super easy to trim a video:
 
@@ -72,6 +75,7 @@ ffmpeg makes it super easy to trim a video:
 
 
 ##### GIF? GIF! with video_to_gif.bat
+#
 
 Okay so MP4 files are fun and good but what about GIFs? That is not a problem with ffmpeg.exe.
 
@@ -128,6 +132,7 @@ I didn't want to zip ffmpeg.exe but the file size is 37 MB and github has a 25 M
 
 
 ##### youtube-dl
+#
 
 Need videos to mosh? I've included youtube-dl.exe to help you out!
 Downloading youtube videos is as simple as:
