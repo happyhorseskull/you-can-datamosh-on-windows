@@ -52,13 +52,13 @@ If your code editing session gets wild and you're not sure how to fix `do_the_mo
 
 Here are the really important variables in `do_the_mosh_win.py` for changing the output:
 
-`start_sec = 3` Time the effect starts on the original footage's timeline. The output video can be much longer.
+`start_sec = 3` Time the effect starts on the original video's timeline. The final video can be much longer.
 
-`end_sec = 6` Time the effect ends on the original footage's timeline.
+`end_sec = 6` Time the effect ends on the original video's timeline.
 
 `output_length = 60` How long the final video will be in seconds
 
-`repeat_p_frames = 15` If this is set to 0 the result will be boring and only contain i-frames. Possibly only a single i-frame.
+`repeat_p_frames = 15` Changes how many frames are added during the datamosh
 
 # 
 
