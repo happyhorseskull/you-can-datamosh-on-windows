@@ -30,7 +30,7 @@ goto:eof
     set duration=%3
   )
 
-  set "gif_folder=gifs"
+  set "gif_folder=GIFs"
 	
   if not exist %gif_folder% mkdir %gif_folder%
     
