@@ -27,9 +27,15 @@ else:
 # variables
 
 fn = os.path.splitext(os.path.basename(input_video))[0]
-input_avi =  'datamoshing_input.avi'		# must be an AVI so i-frames can be located in binary file
-output_avi = 'datamoshing_output.avi'
-output_dir = 'moshed_videos/'
+
+output_dir   = 'moshed_videos/'
+
+# make sure the output directory exists
+if not os.path.exists(output_dir):
+	os.mkdir(output_dir)
+
+input_avi    = output_dir + 'datamoshing_input.avi'		# must be an AVI so i-frames can be located in binary file
+output_avi   = output_dir + 'datamoshing_output.avi'
 output_video = output_dir + 'moshed_' + fn + '.mp4'	# this ensures we won't over-write your original video
 
 fps = 25				# The number of frames per second the initial video is converted to before moshing.
@@ -95,7 +101,6 @@ output_video_width_in_pixels = 480	# 480 is Twitter-friendly. Programs get real 
 subprocess.run('ffmpeg.exe -loglevel error -y -i ' + input_video + ' ' +
 				' -crf 0 -pix_fmt yuv420p -r ' + str(fps) + ' ' + input_avi)
 
-
 in_file  = open(input_avi,  'rb')
 out_file = open(output_avi, 'wb')
 
@@ -132,10 +137,6 @@ for index, frame in enumerate(frames):
 
 in_file.close()
 out_file.close()
-
-# make sure the output directory exists
-if not os.path.exists(output_dir):
-	os.mkdir(output_dir)
 
 # Convert avi to mp4. If you want a different format try changing the output variable's file extension
 # and commenting out the line below that starts with -crf. If that doesn't work you'll be making friends with ffmpeg's many, many options.
