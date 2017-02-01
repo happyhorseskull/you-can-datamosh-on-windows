@@ -32,7 +32,7 @@ goto:eof
   
                         rem    Assigns default values at the start of the file if none given at command line
   if [%2]==[] ( 
-    set start_time=%start_second%
+    set start_time=%start_gif%
   ) else (
     set start_time=[%2]
   )
